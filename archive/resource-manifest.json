@@ -1,0 +1,52 @@
+[
+  {
+    "path": "assets/images/door-cream.png",
+    "bytes": 843269,
+    "sha256": "16ec62ec951a90839ca184e67e858c0f9dbb7e5caa5d9bb96a9f930c9503829a"
+  },
+  {
+    "path": "assets/images/door-forest.png",
+    "bytes": 912834,
+    "sha256": "f4bce0af0425929af2430bfba335c9513241458e32625708c9dbac41e33d0ba9"
+  },
+  {
+    "path": "assets/fonts/wedding-regular.ttf",
+    "bytes": 1190736,
+    "sha256": "931c5de5c70401d9324d5014c123802b4fb753000360ceb2f56c589403cd58c5"
+  },
+  {
+    "path": "assets/fonts/wedding-italic.ttf",
+    "bytes": 962864,
+    "sha256": "e7f7a88b65188328aea58670f955022e23c712f55679524729da1e4e03c49d88"
+  },
+  {
+    "path": "assets/fonts/wedding-script.otf",
+    "bytes": 44808,
+    "sha256": "7f7f10eb4f29538df7f44c4f58236d152f1859de5d494a262f55437c7eabbf7b"
+  },
+  {
+    "path": "assets/images/couple-foreheads.webp",
+    "bytes": 145946,
+    "sha256": "2fd1363d9ffc1f54b843a083f13e626944c4329bc40e033470efd40d41607722"
+  },
+  {
+    "path": "assets/images/couple-walking.webp",
+    "bytes": 142492,
+    "sha256": "11d8ef23dd5cd40f52384f10fa6bfb2fb0e7a0575b4f42ad18ec330980b18133"
+  },
+  {
+    "path": "assets/images/couple-embrace.webp",
+    "bytes": 139550,
+    "sha256": "b2ee635014e0f819d679559c9cfd31c325dc369f0b373bdb6c828e08ffac86f8"
+  },
+  {
+    "path": "assets/images/lace.png",
+    "bytes": 1483135,
+    "sha256": "2d299b5c277e8670bf073a17a4b93483fd5c3b630c355637d46d9fa28b48bcc2"
+  },
+  {
+    "path": "assets/audio/wedding-music.mp3",
+    "bytes": 1537196,
+    "sha256": "e643b5a94604b3e87feeab3207490690489f905f3618ede7339064956a924d28"
+  }
+]

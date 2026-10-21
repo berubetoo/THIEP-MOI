@@ -1,0 +1,14 @@
+const fs=require('fs');const path='thiep-moi-dam-cuoi.html';let h=fs.readFileSync(path,'utf8');
+h=h.replace("const scrollMotionQuery=window.matchMedia('(prefers-reduced-motion: reduce)');\n",'');
+h=h.replace('if(!observer||scrollMotionQuery.matches)return;','if(!observer)return;');
+h=h.replace(/scrollMotionQuery\.addEventListener\('change',[^\n]+\n/,'');
+h=h.replace('@media(prefers-reduced-motion:reduce){.wedding-page .scroll-reveal,.wedding-page .scroll-reveal.revealed{opacity:1;transform:none;animation:none}}','');
+h=h.replace("function showReveal(el){el.classList.add('revealed')}","function showReveal(el){el.classList.add('revealed')}\nfunction updateScrollReveal(entry){const el=entry.target;if(entry.isIntersecting&&entry.intersectionRatio>=.14){showReveal(el)}else if(!entry.isIntersecting&&!el.contains(document.activeElement)){el.classList.remove('revealed','reveal-complete')}}");
+h=h.replace("new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){showReveal(entry.target);revealObserver.unobserve(entry.target)}}),{root:revealRoot,threshold:.14,rootMargin:'0px 0px -32px 0px'})","new IntersectionObserver(entries=>entries.forEach(updateScrollReveal),{root:revealRoot,threshold:[0,.14],rootMargin:'0px 0px -10% 0px'})");
+h=h.replace("new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){showReveal(entry.target);dialogRevealObserver.unobserve(entry.target)}}),{threshold:.14})","new IntersectionObserver(entries=>entries.forEach(updateScrollReveal),{threshold:[0,.14]})");
+h=h.replace("effect==='weddingSpinFade'?'2.2s':isPhoto?'1.8s':'1.55s'","effect==='weddingSpinFade'?'3s':isPhoto?'2.6s':'2.2s'");
+h=h.replace('cubic-bezier(.2,.65,.25,1) var(--scroll-delay,0s)','cubic-bezier(.25,.1,.25,1) var(--scroll-delay,0s)');
+if(h.includes('scrollMotionQuery'))throw Error('Motion bypass remains');
+new Function(h.match(/<script>([\s\S]*?)<\/script>/)[1]);
+fs.writeFileSync(path,h);fs.copyFileSync(path,'wedding-deploy/wedding/index.html');
+console.log('Verified: no reduced-motion reveal bypass; scroll re-entry enabled; durations increased.');

@@ -1,0 +1,12 @@
+{
+  "name": "thiep-cuoi-local",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Thiep cuoi Nhung va Cuong chay localhost, khong can DNS hay hosting.",
+  "scripts": {
+    "start": "node scripts/serve-local.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
