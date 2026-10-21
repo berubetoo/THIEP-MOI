@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <!-- <title>Thiệp cưới Hoài Nam & Thanh Trúc</title> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&family=Playfair+Display:wght@400;600&family=Be+Vietnam+Pro:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="locked">
+    <div id="cover">
+      <svg
+        class="ribbon top"
+        viewBox="0 0 800 260"
+        preserveAspectRatio="none"
+        aria-hidden="true"
+      >
+        <path
+          d="M0 40 C150 120 250 -20 420 60 S700 140 800 40 V0 H0Z"
+          fill="#e4b2bf"
+          opacity=".55"
+        />
+        <path
+          d="M0 90 C180 170 300 30 470 100 S720 190 800 90 V0 H0Z"
+          fill="#d593a5"
+          opacity=".45"
+        />
+        <path
+          d="M0 130 C200 210 330 80 520 150 S740 230 800 140 V0 H0Z"
+          fill="#b8798d"
+          opacity=".35"
+        />
+      </svg>
+      <svg
+        class="ribbon bot"
+        viewBox="0 0 800 260"
+        preserveAspectRatio="none"
+        aria-hidden="true"
+      >
+        <path
+          d="M0 40 C150 120 250 -20 420 60 S700 140 800 40 V0 H0Z"
+          fill="#e4b2bf"
+          opacity=".55"
+        />
+        <path
+          d="M0 90 C180 170 300 30 470 100 S720 190 800 90 V0 H0Z"
+          fill="#d593a5"
+          opacity=".45"
+        />
+        <path
+          d="M0 130 C200 210 330 80 520 150 S740 230 800 140 V0 H0Z"
+          fill="#b8798d"
+          opacity=".35"
+        />
+      </svg>
+      <div class="cover-in">
+        <svg class="lily" viewBox="0 0 100 130" aria-hidden="true">
+          <path
+            d="M50 128 C50 100 48 80 50 62"
+            stroke="#4f8f73"
+            stroke-width="3"
+            fill="none"
+            stroke-linecap="round"
+          />
+          <path
+            d="M50 100 C30 96 20 80 22 66 C36 70 48 84 50 100Z"
+            fill="#6aa98a"
+          />
+          <path
+            d="M50 8 C20 24 14 62 38 78 C46 83 54 83 62 78 C86 62 80 24 50 8Z"
+            fill="#fff"
+            stroke="#cfe3d6"
+            stroke-width="1.5"
+          />
+          <path
+            d="M50 14 C46 40 46 58 50 76"
+            stroke="#e3efe7"
+            stroke-width="1.5"
+            fill="none"
+          />
+          <rect x="46" y="38" width="8" height="30" rx="4" fill="#e9c46a" />
+        </svg>
+        <h1 class="names script">Quốc Cường<i>&amp;</i>Tuyết Nhung</h1>
+        <p class="date">24 · 11 · 2026</p>
+        <p
+          id="guestName"
+          class="serif"
+          style="color: var(--g3); font-size: 1.15rem; min-height: 1.7em"
+        ></p>
+        <button class="btn" id="openBtn">Mở thiệp</button>
+      </div>
+    </div>
+
+    <main>
+      <section class="hero reveal">
+        <div class="hero-copy">
+          <p class="hero-save script">Save</p>
+          <p class="hero-the-date">The Date</p>
+          <h1 class="hero-names script">
+            <span>Quốc Cường</span><i>&amp;</i><span>Tuyết Nhung</span>
+          </h1>
+          <p class="hero-date">24.11.2026</p>
+        </div>
+        <div class="hero-flower-frame" aria-hidden="true>
+          <img class="hero-flower" src="lily-cutout.png" alt="" />
+        </div>
+      </section>
+
+      <section class="family-page reveal" aria-labelledby="family-title">
+        <img class="family-flower" src="lily-cutout.png" alt="" aria-hidden="true" />
+        <div class="family-columns">
+          <article class="family-card">
+            <!-- <div class="family-icon" aria-hidden="true">♔</div> -->
+            <p class="family-role">Chú rể</p>
+            <h3>Vương Quốc Cường</h3>
+            <p class="family-side">Nhà trai</p>
+            <p class="family-parent"><span>Ông</span> Vương Đăng Tân</p>
+            <p class="family-parent"><span>Bà</span> Nguyễn Thị Nhung</p>
+          </article>
+          <article class="family-card">
+            <!-- <div class="family-icon" aria-hidden="true">♕</div> -->
+            <p class="family-role">Cô dâu</p>
+            <h3>Trần Tuyết Nhung</h3>
+            <p class="family-side">Nhà gái</p>
+            <p class="family-parent"><span>Ông</span> Trần Đức Mạnh</p>
+            <p class="family-parent"><span>Bà</span> Trịnh Thị Hương</p>
+          </article>
+        </div>
+        <h2 id="wedding-schedule-title">
+          Trân trọng kính mời quý khách đến tham dự lễ cưới
+        </h2>
+      </section>
+
+      <section class="reveal" aria-labelledby="wedding-schedule-title">
+        <div class="schedule-tables">
+          <article class="schedule-card">
+            <!-- <div class="schedule-icon" aria-hidden="true">❦</div> -->
+            <p class="schedule-label">Bữa cơm thân mật</p>
+            <p class="schedule-time">17:00</p>
+            <p class="schedule-date">Thứ Hai, ngày 23.11.2026</p>
+            <p class="schedule-lunar">Tức ngày 15 tháng 10 năm Bính Ngọ</p>
+            <div class="schedule-rule"></div>
+            <p class="schedule-place">Nhà văn hóa</p>
+            <p class="schedule-address">
+              Cụm dân cư Quảng Tái,<br />xã Ứng Hòa, Hà Nội
+            </p>
+            <a
+              class="btn schedule-map-btn"
+              href="https://www.google.com/maps/search/?api=1&amp;query=Nh%C3%A0+v%C4%83n+h%C3%B3a%2C+C%E1%BB%A5m+d%C3%A2n+c%C6%B0+Qu%E1%BA%A3ng+T%C3%A1i%2C+x%C3%A3+%E1%BB%A8ng+H%C3%B2a%2C+H%C3%A0+N%E1%BB%99i"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Xem bản đồ</a
+            >
+          </article>
+          <article class="schedule-card">
+            <!-- <div class="schedule-icon" aria-hidden="true">♧</div> -->
+            <p class="schedule-label">Lễ thành hôn</p>
+            <p class="schedule-time">15:00</p>
+            <p class="schedule-date">Thứ Ba, ngày 24.11.2026</p>
+            <p class="schedule-lunar">Tức ngày 16 tháng 10 năm Bính Ngọ</p>
+            <div class="schedule-rule"></div>
+            <p class="schedule-place">Tư gia nhà trai</p>
+            <p class="schedule-address">
+              Số 10, ngõ 4, Cụm dân cư Quảng Tái,<br />xã Ứng Hòa, Hà Nội
+            </p>
+            <a
+              class="btn schedule-map-btn"
+              href="https://www.google.com/maps/search/?api=1&amp;query=S%E1%BB%91+10%2C+ng%C3%B5+4%2C+C%E1%BB%A5m+d%C3%A2n+c%C6%B0+Qu%E1%BA%A3ng+T%C3%A1i%2C+x%C3%A3+%E1%BB%A8ng+H%C3%B2a%2C+H%C3%A0+N%E1%BB%99i"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Xem bản đồ</a
+            >
+          </article>
+        </div>
+      </section>
+
+      <section class="calendar-section reveal" aria-labelledby="calendar-title">
+        <p class="calendar-kicker">Save the date</p>
+        <h2 id="calendar-title">Tháng 11 · 2026</h2>
+        <p class="calendar-note">Ngày vui của chúng mình</p>
+        <div class="calendar-card">
+          <table class="wedding-calendar" aria-label="Lịch tháng 11 năm 2026">
+            <thead>
+              <tr>
+                <th scope="col">CN</th>
+                <th scope="col">T2</th>
+                <th scope="col">T3</th>
+                <th scope="col">T4</th>
+                <th scope="col">T5</th>
+                <th scope="col">T6</th>
+                <th scope="col">T7</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="calendar-day" aria-label="Chủ Nhật, ngày 1 tháng 11">1</span></td>
+                <td><span class="calendar-day" aria-label="Thứ Hai, ngày 2 tháng 11">2</span></td>
+                <td><span class="calendar-day" aria-label="Thứ Ba, ngày 3 tháng 11">3</span></td>
+                <td><span class="calendar-day" aria-label="Thứ Tư, ngày 4 tháng 11">4</span></td>
+                <td><span class="calendar-day" aria-label="Thứ Năm, ngày 5 tháng 11">5</span></td>
+                <td><span class="calendar-day" aria-label="Thứ Sáu, ngày 6 tháng 11">6</span></td>
+                <td><span class="calendar-day" aria-label="Thứ Bảy, ngày 7 tháng 11">7</span></td>
+              </tr>
+              <tr>
+                <td><span class="calendar-day" aria-label="Chủ Nhật, ngày 8 tháng 11">8</span></td>
+                <td><span class="calendar-day" aria-label="Thứ Hai, ngày 9 tháng 11">9</span></td>
+                <td><span class="calendar-day" aria-label="Thứ Ba, ngày 10 tháng 11">10</span></td>
+                <td><span class="calendar-day" aria-label="Thứ Tư, ngày 11 tháng 11">11</span></td>
+                <td><span class="calendar-day" aria-label="Thứ Năm, ngày 12 tháng 11">12</span></td>
+                <td><span class="calendar-day" aria-label="Thứ Sáu, ngày 13 tháng 11">13</span></td>
+                <td><span class="calendar-day" aria-label="Thứ Bảy, ngày 14 tháng 11">14</span></td>
+              </tr>
+              <tr>
+                <td><span class="calendar-day" aria-label="Chủ Nhật, ngày 15 tháng 11">15</span></td>
+                <td><span class="calendar-day" aria-label="Thứ Hai, ngày 16 tháng 11">16</span></td>
+                <td><span class="calendar-day" aria-label="Thứ Ba, ngày 17 tháng 11">17</span></td>
+                <td><span class="calendar-day" aria-label="Thứ Tư, ngày 18 tháng 11">18</span></td>
+                <td><span class="calendar-day" aria-label="Thứ Năm, ngày 19 tháng 11">19</span></td>
+                <td><span class="calendar-day" aria-label="Thứ Sáu, ngày 20 tháng 11">20</span></td>
+                <td><span class="calendar-day" aria-label="Thứ Bảy, ngày 21 tháng 11">21</span></td>
+              </tr>
+              <tr>
+                <td><span class="calendar-day" aria-label="Chủ Nhật, ngày 22 tháng 11">22</span></td>
+                <td><span class="calendar-day" aria-label="Thứ Hai, ngày 23 tháng 11">23</span></td>
+                <td class="calendar-highlight"><span class="calendar-day" aria-label="Thứ Ba, ngày 24 tháng 11 năm 2026, ngày cưới">24</span><span class="calendar-heart" aria-hidden="true">♥</span></td>
+                <td><span class="calendar-day" aria-label="Thứ Tư, ngày 25 tháng 11">25</span></td>
+                <td><span class="calendar-day" aria-label="Thứ Năm, ngày 26 tháng 11">26</span></td>
+                <td><span class="calendar-day" aria-label="Thứ Sáu, ngày 27 tháng 11">27</span></td>
+                <td><span class="calendar-day" aria-label="Thứ Bảy, ngày 28 tháng 11">28</span></td>
+              </tr>
+              <tr>
+                <td><span class="calendar-day" aria-label="Chủ Nhật, ngày 29 tháng 11">29</span></td>
+                <td><span class="calendar-day" aria-label="Thứ Hai, ngày 30 tháng 11">30</span></td>
+                <td class="calendar-empty" aria-hidden="true"></td>
+                <td class="calendar-empty" aria-hidden="true"></td>
+                <td class="calendar-empty" aria-hidden="true"></td>
+                <td class="calendar-empty" aria-hidden="true"></td>
+                <td class="calendar-empty" aria-hidden="true"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="reveal" aria-labelledby="albums-title">
+        <!-- <p class="kicker">Khoảnh khắc của chúng mình</p> -->
+        <h2 id="albums-title">Album ảnh</h2>
+        <div class="album-columns">
+          <article class="album-card">
+            <h3>Ảnh Studio</h3>
+            <div
+              class="album-carousel"
+              data-album="studio"
+              aria-label="Album ảnh studio"
+            >
+              <button
+                class="album-arrow previous"
+                type="button"
+                aria-label="Ảnh trước"
+              >
+                ‹
+              </button>
+              <div class="album-viewport" tabindex="0">
+                <div class="album-track">
+                  <div class="photo-placeholder photo-one">
+                    <!-- <span>Ảnh Studio 1</span> -->
+                  </div>
+                  <div class="photo-placeholder photo-two">
+                    <!-- <span>Ảnh Studio 2</span> -->
+                  </div>
+                  <div class="photo-placeholder photo-three">
+                    <!-- <span>Ảnh Studio 3</span> -->
+                  </div>
+                </div>
+              </div>
+              <button
+                class="album-arrow next"
+                type="button"
+                aria-label="Ảnh tiếp theo"
+              >
+                ›
+              </button>
+            </div>
+          </article>
+          <article class="album-card">
+            <h3>Ảnh lễ cưới</h3>
+            <div
+              class="album-carousel"
+              data-album="wedding"
+              aria-label="Album ảnh lễ cưới"
+            >
+              <button
+                class="album-arrow previous"
+                type="button"
+                aria-label="Ảnh trước"
+              >
+                ‹
+              </button>
+              <div class="album-viewport" tabindex="0">
+                <div class="album-track">
+                  <div class="photo-placeholder photo-two">
+                    <!-- <span>Ảnh lễ cưới 1</span> -->
+                  </div>
+                  <div class="photo-placeholder photo-three">
+                    <!-- <span>Ảnh lễ cưới 2</span> -->
+                  </div>
+                  <div class="photo-placeholder photo-one">
+                    <!-- <span>Ảnh lễ cưới 3</span> -->
+                  </div>
+                </div>
+              </div>
+              <button
+                class="album-arrow next"
+                type="button"
+                aria-label="Ảnh tiếp theo"
+              >
+                ›
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="script">Quốc Cường &amp; Tuyết Nhung</div>
+      <p>
+        Sự hiện diện của quý khách là niềm vinh hạnh của gia đình chúng tôi.
+      </p>
+    </footer>
+    <div class="toast" id="toast"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
